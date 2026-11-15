@@ -12,7 +12,7 @@ let package = Package(
         .library(name: "SocketIOHummingbird", targets: ["SocketIOHummingbird"]),
     ],
     dependencies: [
-        .package(path: "../socket.io-server-swift"),
+        .package(url: "https://github.com/ivanvranjic/socket.io-server-swift.git", .upToNextMinor(from: "0.1.0")),
         .package(url: "https://github.com/hummingbird-project/hummingbird.git", from: "2.20.0"),
         .package(url: "https://github.com/hummingbird-project/hummingbird-websocket.git", from: "2.8.0"),
     ],

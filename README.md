@@ -5,6 +5,13 @@ Lives in its own package because `hummingbird-websocket` requires Swift 6.2 / ma
 platform floor for the Vapor adapter too.
 
 ```swift
+// Package.swift
+.package(url: "https://github.com/ivanvranjic/socket.io-server-swift.git", .upToNextMinor(from: "0.1.0")),
+.package(url: "https://github.com/ivanvranjic/socket.io-server-swift-hummingbird.git", .upToNextMinor(from: "0.1.0")),
+.product(name: "SocketIOHummingbird", package: "socket.io-server-swift-hummingbird")
+```
+
+```swift
 import Hummingbird
 import HummingbirdWebSocket
 import SocketIOHummingbird
