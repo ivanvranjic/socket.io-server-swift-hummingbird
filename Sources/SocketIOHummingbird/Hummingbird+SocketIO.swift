@@ -1,4 +1,5 @@
 @_exported import SocketIOCore
+@_exported import HummingbirdWebSocket
 import Foundation
 import Hummingbird
 import HummingbirdWebSocket

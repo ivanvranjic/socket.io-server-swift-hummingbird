@@ -11,9 +11,13 @@ platform floor for the Vapor adapter too.
 .product(name: "SocketIOHummingbird", package: "socket.io-server-swift-hummingbird")
 ```
 
+`SocketIOHummingbird` re-exports `SocketIOCore` and `HummingbirdWebSocket`, so one import is enough. **Don't add
+`hummingbird-websocket` to your own `Package.swift` alongside this package**: with SwiftPM 6.2 that combination fails
+to resolve (`product 'Configuration' ... not found in package 'swift-configuration'`). Depend on `hummingbird` as usual
+and let this package bring in the WebSocket module.
+
 ```swift
 import Hummingbird
-import HummingbirdWebSocket
 import SocketIOHummingbird
 
 let io = SocketIOServer()

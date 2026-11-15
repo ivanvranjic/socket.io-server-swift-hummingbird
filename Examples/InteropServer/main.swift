@@ -1,6 +1,6 @@
 import Foundation
 import Hummingbird
-import HummingbirdWebSocket
+
 import SocketIOHummingbird
 
 // Same behaviour as the Vapor InteropServer, so the shared client tests can run against it.
