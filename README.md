@@ -1,6 +1,6 @@
 # socket.io-server-swift-hummingbird
 
-[Hummingbird](https://hummingbird.codes) 2 adapter for [socket.io-server-swift](../socket.io-server-swift).
+[Hummingbird](https://hummingbird.codes) 2 adapter for [socket.io-server-swift](https://github.com/ivanvranjic/socket.io-server-swift).
 Lives in its own package because `hummingbird-websocket` requires Swift 6.2 / macOS 14, which would otherwise raise the
 platform floor for the Vapor adapter too.
 
